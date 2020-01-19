@@ -10,12 +10,15 @@
 
 - Lista de musicas baseado na temperatura da cidade atual
 https://api-ingaia.herokuapp.com/recomendacao/$cidade,pais
+ex: https://api-ingaia.herokuapp.com/recomendacao/campinas,br
 
 - Temperatura atual da cidade
 https://api-ingaia.herokuapp.com/temperatura/$cidade,pais
+ex: https://api-ingaia.herokuapp.com/temperatura/campinas,br
 
 - Lista de músicas baseado no genêro
 https://api-ingaia.herokuapp.com/pesquisa/$genero
+ex: https://api-ingaia.herokuapp.com/pesquisa/rock
 
 
 
