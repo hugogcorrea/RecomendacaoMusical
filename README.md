@@ -16,7 +16,7 @@ ex: https://api-ingaia.herokuapp.com/recomendacao/campinas,br
 https://api-ingaia.herokuapp.com/temperatura/$cidade,pais
 ex: https://api-ingaia.herokuapp.com/temperatura/campinas,br
 
-- Lista de músicas baseado no genêro
+- Lista de músicas baseado no gênero
 https://api-ingaia.herokuapp.com/pesquisa/$genero
 ex: https://api-ingaia.herokuapp.com/pesquisa/rock
 
