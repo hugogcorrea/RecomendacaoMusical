@@ -26,20 +26,24 @@ public class Musicas implements MusicasInterface {
 	public List<String> buscarMusicasPorGenero(String genero) {
 		List<String> retorno = new ArrayList<String>();
 		try {
-			SpotifyApi spotifyApi = new SpotifyApi.Builder().setAccessToken(geraToken.GerarToken()).build();
-			
-			
+			SpotifyApi spotifyApi = new SpotifyApi
+					.Builder()
+					.setAccessToken(geraToken.GerarToken())
+					.build();			
 			final GetRecommendationsRequest getRecommendationsRequest = spotifyApi
 					.getRecommendations()
-					.seed_genres(genero).build();
+					.seed_genres(genero)
+					.build();
 			final Recommendations recommendations = getRecommendationsRequest.execute();
 
 			ObjectMapper mapper = new ObjectMapper();
 			String jsonString = mapper.writeValueAsString(recommendations);
-			Gson g = new Gson();
-			Spotify_Recomendation recomendation = g.fromJson(jsonString, Spotify_Recomendation.class);			
 			
-			retorno = recomendation.getTracks().stream()
+			Gson gson = new Gson();
+			Spotify_Recomendation recomendation = gson.fromJson(jsonString, Spotify_Recomendation.class);			
+			
+			retorno = recomendation
+					.getTracks().stream()
 					.map(x -> x.getName())
 					.collect(Collectors.toList());
 			

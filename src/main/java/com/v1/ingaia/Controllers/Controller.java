@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.v1.ingaia.Exceptions.CityNotFound;
 import com.v1.ingaia.Services.MusicasInterface;
 import com.v1.ingaia.Services.MusicasTemperaturaInterface;
 import com.v1.ingaia.Services.TemperaturaInterface;
@@ -24,17 +26,20 @@ public class Controller {
 	MusicasTemperaturaInterface musicasPorTemperatura;
 
 	@GetMapping("/temperatura/{cidadePais}")
-	public ResponseEntity<Double> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais) {
+	public ResponseEntity<Double> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
+			throws CityNotFound {
 		return ResponseEntity.ok().body(requisicaoTemperatura.buscarTemperturaCidade(cidadePais));
 	}
 
 	@GetMapping("/pesquisa/{genero}")
 	public ResponseEntity<List<String>> Teste(@PathVariable("genero") String genero) {
+		System.out.println("ok");
 		return ResponseEntity.ok().body(pesquisar.buscarMusicasPorGenero(genero));
 	}
 
 	@GetMapping("/recomendacao/{cidadePais}")
-	public ResponseEntity<List<String>> BuscasRecomendacao(@PathVariable("cidadePais") String cidadePais) {
+	public ResponseEntity<List<String>> BuscasRecomendacao(@PathVariable("cidadePais") String cidadePais)
+			throws CityNotFound {
 		return ResponseEntity.ok().body(musicasPorTemperatura.buscarMusicasPorTemperatura(cidadePais));
 	}
 }
