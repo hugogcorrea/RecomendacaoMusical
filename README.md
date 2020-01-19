@@ -9,10 +9,14 @@
 # Solicitações get pelo navegador
 
 - Lista de musicas baseado na temperatura da cidade atual
-https://api-ingaia.herokuapp.com/recomendacao/<cidade,pais>
+https://api-ingaia.herokuapp.com/recomendacao/$cidade,pais
 
 - Temperatura atual da cidade
-https://api-ingaia.herokuapp.com/temperatura/<cidade,pais>
+https://api-ingaia.herokuapp.com/temperatura/$cidade,pais
 
 - Lista de músicas baseado no genêro
-https://api-ingaia.herokuapp.com/pesquisa/<genero>
+https://api-ingaia.herokuapp.com/pesquisa/$genero
+
+
+
+Ps: para requisição, trocar variáveis $ por "cidade, pais" ou "genero" conforme indicado
