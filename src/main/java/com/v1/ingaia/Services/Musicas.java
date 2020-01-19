@@ -45,8 +45,7 @@ public class Musicas implements MusicasInterface {
 			retorno = recomendation
 					.getTracks().stream()
 					.map(x -> x.getName())
-					.collect(Collectors.toList());
-			
+					.collect(Collectors.toList());			
 		} catch (IOException | SpotifyWebApiException e) {
 			System.out.println(e.getMessage());
 		}

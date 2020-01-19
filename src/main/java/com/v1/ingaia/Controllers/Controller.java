@@ -33,7 +33,6 @@ public class Controller {
 
 	@GetMapping("/pesquisa/{genero}")
 	public ResponseEntity<List<String>> Teste(@PathVariable("genero") String genero) {
-		System.out.println("ok");
 		return ResponseEntity.ok().body(pesquisar.buscarMusicasPorGenero(genero));
 	}
 
