@@ -5,7 +5,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.v1.ingaia.models.Weather;
+import com.v1.ingaia.Models.Weather;
 
 @Service
 public class Temperatura implements TemperaturaInterface{
