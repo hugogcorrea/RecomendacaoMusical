@@ -20,6 +20,8 @@ public class GeraTokenSpotify implements GeraTokenSpotifyInterface {
 			.build();
 	private static final ClientCredentialsRequest clientCredentialsRequest = spotifyApi.clientCredentials().build();
 
+	
+	@Override
 	public String GerarToken() {
 		try {
 			final ClientCredentials clientCredentials = clientCredentialsRequest.execute();

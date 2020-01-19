@@ -14,6 +14,7 @@ public class Temperatura implements TemperaturaInterface{
 	private final String KEY = "89c0e7514cc9060676ab1152eebd77b8";
 	private final Double TEMP_KELVIN_TO_CELSIUS = 273.15;
 	
+	@Override
 	public Double buscarTemperturaCidade(final String cidadePais) throws CityNotFound {
 		RestTemplate restTemplate = new RestTemplate();
 		

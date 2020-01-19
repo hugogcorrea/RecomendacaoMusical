@@ -21,7 +21,7 @@ public class MusicasTemperatura implements MusicasTemperaturaInterface {
 
 	@Override
 	public List<String> buscarMusicasPorTemperatura(String cidadePais) throws CityNotFound {
-		// TODO Auto-generated method stub
+		
 		Double temperatura = requisicaoTemperatura.buscarTemperturaCidade(cidadePais);
 		String genero;
 

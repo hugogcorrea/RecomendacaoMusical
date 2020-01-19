@@ -26,9 +26,10 @@ public class Controller {
 	MusicasTemperaturaInterface musicasPorTemperatura;
 
 	@GetMapping("/temperatura/{cidadePais}")
-	public ResponseEntity<Double> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
+	public ResponseEntity<String> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
 			throws CityNotFound {
-		return ResponseEntity.ok().body(requisicaoTemperatura.buscarTemperturaCidade(cidadePais));
+		int temperatura =  (int)Math.round(requisicaoTemperatura.buscarTemperturaCidade(cidadePais));		
+		return ResponseEntity.ok().body(temperatura + "ºC");
 	}
 
 	@GetMapping("/pesquisa/{genero}")
