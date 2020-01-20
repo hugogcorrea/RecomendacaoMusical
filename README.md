@@ -8,7 +8,7 @@
 
 # Solicitações get pelo navegador
 
-- Lista de musicas baseado na temperatura da cidade atual
+- Lista de musicas baseado na temperatura atual da cidade solicitada
 https://api-ingaia.herokuapp.com/recomendacao/$cidade,pais
 ex: https://api-ingaia.herokuapp.com/recomendacao/campinas,br
 
