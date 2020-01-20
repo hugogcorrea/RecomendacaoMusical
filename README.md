@@ -1,6 +1,6 @@
-# Teste Ingaia - API para recomendações musicais
+# Desafio Ingaia - API para recomendações musicais
 
-- API desenvolvida para teste de recrutamento da Ingaia
+- API desenvolvida para desafio de recrutamento da Ingaia
 
 # Stack
 
@@ -8,7 +8,7 @@
 
 # Solicitações get pelo navegador
 
-- Lista de musicas baseado na temperatura da cidade atual
+- Lista de musicas baseado na temperatura atual da cidade solicitada
 https://api-ingaia.herokuapp.com/recomendacao/$cidade,pais
 ex: https://api-ingaia.herokuapp.com/recomendacao/campinas,br
 
