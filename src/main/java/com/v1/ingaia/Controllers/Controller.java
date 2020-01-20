@@ -9,21 +9,21 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.v1.ingaia.Exceptions.CityNotFound;
-import com.v1.ingaia.Services.MusicasInterface;
-import com.v1.ingaia.Services.MusicasTemperaturaInterface;
-import com.v1.ingaia.Services.TemperaturaInterface;
+import com.v1.ingaia.Services.Musicas;
+import com.v1.ingaia.Services.MusicasTemperatura;
+import com.v1.ingaia.Services.Temperatura;
 
 @RestController
 public class Controller {
 
 	@Autowired
-	TemperaturaInterface requisicaoTemperatura;
+	Temperatura requisicaoTemperatura;
 
 	@Autowired
-	MusicasInterface pesquisar;
+	Musicas pesquisarMusicas;
 
 	@Autowired
-	MusicasTemperaturaInterface musicasPorTemperatura;
+	MusicasTemperatura musicasPorTemperatura;
 
 	@GetMapping("/temperatura/{cidadePais}")
 	public ResponseEntity<String> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
@@ -34,7 +34,7 @@ public class Controller {
 
 	@GetMapping("/pesquisa/{genero}")
 	public ResponseEntity<List<String>> Teste(@PathVariable("genero") String genero) {
-		return ResponseEntity.ok().body(pesquisar.buscarMusicasPorGenero(genero));
+		return ResponseEntity.ok().body(pesquisarMusicas.buscarMusicasPorGenero(genero));
 	}
 
 	@GetMapping("/recomendacao/{cidadePais}")
