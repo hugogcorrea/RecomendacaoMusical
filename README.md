@@ -1,6 +1,6 @@
 # Desafio Ingaia - API para recomendações musicais
 
-- API desenvolvida para teste de recrutamento da Ingaia
+- API desenvolvida para desafio de recrutamento da Ingaia
 
 # Stack
 
