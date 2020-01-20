@@ -1,4 +1,4 @@
-# Teste Ingaia - API para recomendações musicais
+# Desafio Ingaia - API para recomendações musicais
 
 - API desenvolvida para teste de recrutamento da Ingaia
 
