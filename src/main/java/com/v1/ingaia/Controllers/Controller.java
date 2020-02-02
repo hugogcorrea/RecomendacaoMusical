@@ -24,21 +24,16 @@ public class Controller {
 
 	@Autowired
 	MusicasTemperatura musicasPorTemperatura;
-	
+
 	@GetMapping("/teste")
-	public ResponseEntity<String> teste(){		
-<<<<<<< HEAD
-		
+	public ResponseEntity<String> teste() {
+		return ResponseEntity.ok().body("Teste deploy");
 	}
-	
-=======
-			
->>>>>>> 23a4221b89b652931d1f82bd7eeebd2a860c4c26
 
 	@GetMapping("/temperatura/{cidadePais}")
 	public ResponseEntity<String> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
 			throws CityNotFound {
-		int temperatura =  (int)Math.round(requisicaoTemperatura.buscarTemperturaCidade(cidadePais));		
+		int temperatura = (int) Math.round(requisicaoTemperatura.buscarTemperturaCidade(cidadePais));
 		return ResponseEntity.ok().body(temperatura + "ºC");
 	}
 
