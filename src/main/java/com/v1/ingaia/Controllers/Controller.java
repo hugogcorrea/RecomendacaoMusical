@@ -26,9 +26,8 @@ public class Controller {
 	MusicasTemperatura musicasPorTemperatura;
 	
 	@GetMapping("/teste")
-	public ResponseEntity<String> teste()			
-		return ResponseEntity.ok().body("Teste deploy");
-	}
+	public ResponseEntity<String> teste(){		
+		
 	
 
 	@GetMapping("/temperatura/{cidadePais}")
