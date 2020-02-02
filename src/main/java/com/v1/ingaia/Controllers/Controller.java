@@ -24,6 +24,12 @@ public class Controller {
 
 	@Autowired
 	MusicasTemperatura musicasPorTemperatura;
+	
+	@GetMapping("/teste")
+	public ResponseEntity<String> teste()			
+		return ResponseEntity.ok().body("Teste deploy");
+	}
+	
 
 	@GetMapping("/temperatura/{cidadePais}")
 	public ResponseEntity<String> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
