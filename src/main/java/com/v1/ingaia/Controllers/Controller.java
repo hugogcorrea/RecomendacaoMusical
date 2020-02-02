@@ -27,9 +27,13 @@ public class Controller {
 	
 	@GetMapping("/teste")
 	public ResponseEntity<String> teste(){		
+<<<<<<< HEAD
 		
 	}
 	
+=======
+			
+>>>>>>> 23a4221b89b652931d1f82bd7eeebd2a860c4c26
 
 	@GetMapping("/temperatura/{cidadePais}")
 	public ResponseEntity<String> getTemperaturaByCity(@PathVariable("cidadePais") String cidadePais)
