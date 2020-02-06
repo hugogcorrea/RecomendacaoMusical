@@ -23,5 +23,5 @@ https://api-recomendacaomusical.herokuapp.com/pesquisa/$genero
 ex: https://api-recomendacaomusical.herokuapp.com/pesquisa/rock
 
 
-
+--teste
 Ps: para requisição, trocar variáveis $ por "cidade, pais" ou "genero" conforme indicado
