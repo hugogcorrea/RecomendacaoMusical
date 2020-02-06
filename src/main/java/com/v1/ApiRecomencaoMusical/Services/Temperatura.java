@@ -1,12 +1,12 @@
-package com.v1.ingaia.Services;
+package com.v1.ApiRecomencaoMusical.Services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.v1.ingaia.Exceptions.CityNotFound;
-import com.v1.ingaia.Models.Weather;
+import com.v1.ApiRecomencaoMusical.Exceptions.CityNotFound;
+import com.v1.ApiRecomencaoMusical.Models.Weather;
 
 @Service
 public class Temperatura implements TemperaturaInterface{

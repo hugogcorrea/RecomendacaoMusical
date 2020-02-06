@@ -1,4 +1,4 @@
-package com.v1.ingaia.Exceptions;
+package com.v1.ApiRecomencaoMusical.Exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

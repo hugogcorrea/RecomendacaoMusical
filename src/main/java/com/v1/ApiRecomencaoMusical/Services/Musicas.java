@@ -1,4 +1,4 @@
-package com.v1.ingaia.Services;
+package com.v1.ApiRecomencaoMusical.Services;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.v1.ingaia.Models.Spotify_Recomendation;
+import com.v1.ApiRecomencaoMusical.Models.Spotify_Recomendation;
 import com.wrapper.spotify.SpotifyApi;
 import com.wrapper.spotify.exceptions.SpotifyWebApiException;
 import com.wrapper.spotify.model_objects.specification.Recommendations;

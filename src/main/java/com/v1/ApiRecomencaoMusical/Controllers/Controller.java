@@ -1,17 +1,19 @@
-package com.v1.ingaia.Controllers;
+package com.v1.ApiRecomencaoMusical.Controllers;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.v1.ingaia.Exceptions.CityNotFound;
-import com.v1.ingaia.Services.Musicas;
-import com.v1.ingaia.Services.MusicasTemperatura;
-import com.v1.ingaia.Services.Temperatura;
+import com.v1.ApiRecomencaoMusical.Exceptions.CityNotFound;
+import com.v1.ApiRecomencaoMusical.Services.Musicas;
+import com.v1.ApiRecomencaoMusical.Services.MusicasTemperatura;
+import com.v1.ApiRecomencaoMusical.Services.Temperatura;
 
 @RestController
 public class Controller {
@@ -47,4 +49,6 @@ public class Controller {
 			throws CityNotFound {
 		return ResponseEntity.ok().body(musicasPorTemperatura.buscarMusicasPorTemperatura(cidadePais));
 	}
+
+	
 }

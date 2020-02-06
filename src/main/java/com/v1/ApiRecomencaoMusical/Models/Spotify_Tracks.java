@@ -1,4 +1,4 @@
-package com.v1.ingaia.Models;
+package com.v1.ApiRecomencaoMusical.Models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Weather_Main {
-	private Double temp;
+public class Spotify_Tracks {
+
+	String name;
 }

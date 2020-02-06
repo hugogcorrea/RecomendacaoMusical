@@ -1,6 +1,4 @@
-package com.v1.ingaia.Models;
-
-import java.util.List;
+package com.v1.ApiRecomencaoMusical.Models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +7,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Spotify_Recomendation {
-
-	List<Spotify_Tracks> tracks;
+public class Weather_Main {
+	private Double temp;
 }

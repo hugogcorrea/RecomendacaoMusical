@@ -1,6 +1,6 @@
-package com.v1.ingaia.Services;
+package com.v1.ApiRecomencaoMusical.Services;
 
-import com.v1.ingaia.Exceptions.CityNotFound;
+import com.v1.ApiRecomencaoMusical.Exceptions.CityNotFound;
 
 public interface TemperaturaInterface {
 	

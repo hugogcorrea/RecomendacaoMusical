@@ -1,11 +1,11 @@
-package com.v1.ingaia.Services;
+package com.v1.ApiRecomencaoMusical.Services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.v1.ingaia.Exceptions.CityNotFound;
+import com.v1.ApiRecomencaoMusical.Exceptions.CityNotFound;
 
 @Service
 public class MusicasTemperatura implements MusicasTemperaturaInterface {
