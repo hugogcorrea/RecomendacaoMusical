@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.v1</groupId>
-	<artifactId>ingaia</artifactId>
+	<artifactId>ApiRecomendacaoMusical</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ingaia</name>
 	<description>teste ingana</description>
